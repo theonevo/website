@@ -109,7 +109,7 @@ body {
     padding-top: 3em;
 }**/
 #under {
-    font-size: 1.8em;
+    font-size: 3em;
     position: relative;
     display: inline;
     margin-top: 5em;
@@ -296,4 +296,52 @@ h4 {
 
 p {
     color: #777; /* Set the desired paragraph text color */
+}
+
+.Howto {
+    background-color: rgba(144, 238, 144, 0.8); /* Green background with a glossy glass texture */
+    padding: 30px;
+    border-top-left-radius: 30px; /* Curved top left corner */
+    border-bottom-right-radius: 30px; /* Curved bottom right corner */
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.step-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.step {
+    width: 60%;
+    margin: 20px;
+    text-align: left;
+    position: relative;
+}
+
+#no {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #3498db; /* Blue circle color */
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 40px; /* Adjust the size of the images */
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
