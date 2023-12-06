@@ -11,7 +11,7 @@ body, h1, h2, p, ul {
 
 body {
     font-family: 'Roboto', sans-serif; 
-    background-image: url('/dist/images/background-image.avif'); 
+    background-image: url('dist/images/background-image.avif'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Optional: fixed background */
@@ -64,6 +64,6 @@ body {
 }
 
 .icons i {
-    font-size: 1.5em;
-    color: rgb(155, 189, 174);
+    font-size: 1.8em;
+    color: rgb(29, 89, 143);
 }
