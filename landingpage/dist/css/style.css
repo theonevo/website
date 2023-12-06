@@ -11,7 +11,11 @@ body, h1, h2, p, ul {
 
 body {
     font-family: 'Roboto', sans-serif; 
-    background-color: #f4f4f4;
+    background-image: url('dist/images/background-image.avif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: fixed background */
+    background-position: center center;
 }
 
 .header {
@@ -21,6 +25,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: static;
+    background-color: ;
 }
 
 .logo p {
