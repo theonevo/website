@@ -50,6 +50,22 @@ body {
 .site-header-middle a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+}
+
+.site-header-middle a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: blue; /* Set the color of the line */
+    transition: width 0.3s ease; /* Set the transition properties */
+}
+
+.site-header-middle a:hover::before {
+    width: 75%; /* Expand the line to 100% on hover */
 }
 
 .icons ul {
