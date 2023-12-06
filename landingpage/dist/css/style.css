@@ -67,3 +67,113 @@ body {
     font-size: 1.8em;
     color: rgb(29, 89, 143);
 }
+
+.main {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.main-text p:first-child {
+    font-size: 3.5em;
+    font-weight: 800;
+    color: black;
+}
+
+/**#under {
+    font-size: 1.8em;
+    -webkit-background-clip: text; /
+    color: linear-gradient(85% blue, 15% lightgreen);
+    display: inline;
+    margin-top: 3em;
+    padding-top: 3em;
+}**/
+#under {
+    font-size: 1.8em;
+    position: relative;
+    display: inline;
+    margin-top: 5em;
+    padding-top: 3em;
+    color: transparent;
+}
+
+#under::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 3.3em;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(85deg, blue, lightgreen);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+#under-text {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2.2rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*.cta p {
+    margin: 3rem;
+    padding: 10px 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    background: none;
+    color: rgb(235, 249, 249);
+}
+
+.cta a:first-child {
+    color: none;
+    background-color: blue;
+}
+
+.cta a:last-child {
+    color: #fff;
+    background-color: blue;
+    margin-left: 10px;
+}*/
+
+.cta p {
+    margin: 3rem;
+    text-decoration: none;
+    background: none;
+    color: rgb(107, 216, 216);
+}
+
+.cta a:first-child {
+    color: blue; 
+    background-color: transparent; /* Remove the default blue background */
+}
+
+.cta a:last-child {
+    color: black; /* Set the desired color for the right button */
+    background-color: transparent; /* Remove the default blue background */
+    margin-left: 10px;
+}
+
+.cta p #now{
+    background-color: #816bc3;
+    padding: 10px 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.cta p #more{
+    background-color: #0d0c0f;
+    padding: 10px 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
