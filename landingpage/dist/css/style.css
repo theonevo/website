@@ -256,3 +256,44 @@ body {
 .box p {
     margin: 0;
 }
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: Add a subtle box shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8%); /* Move the card upward by 5% on hover */
+}
+
+.card i {
+    font-size: 2em;
+    color: #3498db; /* Set the desired icon color */
+}
+
+h4 {
+    margin: 15px 0;
+    color: #333; /* Set the desired heading color */
+}
+
+p {
+    color: #777; /* Set the desired paragraph text color */
+}
