@@ -60,12 +60,12 @@ body {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: blue; /* Set the color of the line */
-    transition: width 0.3s ease; /* Set the transition properties */
+    background-color: blue; 
+    transition: width 0.3s ease; 
 }
 
 .site-header-middle a:hover::before {
-    width: 75%; /* Expand the line to 100% on hover */
+    width: 75%;
 }
 
 .icons ul {
@@ -82,6 +82,11 @@ body {
 .icons i {
     font-size: 1.8em;
     color: rgb(29, 89, 143);
+    transition: transform 0.3s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.25); 
 }
 
 .main {
@@ -165,16 +170,21 @@ body {
     text-decoration: none;
     background: none;
     color: rgb(107, 216, 216);
+    transition: transform 0.2s ease;
+}
+
+.cta p:hover{
+    transform: scale(1.25);
 }
 
 .cta a:first-child {
     color: blue; 
-    background-color: transparent; /* Remove the default blue background */
+    background-color: transparent; 
 }
 
 .cta a:last-child {
-    color: black; /* Set the desired color for the right button */
-    background-color: transparent; /* Remove the default blue background */
+    color: black; 
+    background-color: transparent;
     margin-left: 10px;
 }
 
@@ -185,6 +195,7 @@ body {
     border-radius: 5px;
     color: #fff;
 }
+
 
 .cta p #more{
     background-color: #0d0c0f;
